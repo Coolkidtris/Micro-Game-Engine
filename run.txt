@@ -1,1 +1,7 @@
-g++ -o main visual.c -I/c/msys64/ucrt64/include/SDL2 -L/c/msys64/ucrt64/lib -lmingw32 -lSDL2main -lSDL2 -l SDL2_image
+gcc -o main .c -I/c/msys64/ucrt64/include/SDL2 -L/c/msys64/ucrt64/lib -lmingw32 -lSDL2main -lSDL2 -l SDL2_image
+
+gcc -o main main.c sdl.c globals.c \
+    -I/c/msys64/ucrt64/include/SDL2 \
+    -I/c/Users/*user*/Documents/GitHub/Micro-Game-Engine/ \
+    -L/c/msys64/ucrt64/lib \
+    -lmingw32 -lSDL2main -lSDL2 -lSDL2_image
