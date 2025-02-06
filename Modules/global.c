@@ -1,4 +1,4 @@
-#include "sdl.h"
+#include "Header/sdl.h"
 
 /* Define global variables */
 SDL_bool running = SDL_FALSE;

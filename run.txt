@@ -5,3 +5,7 @@ gcc -o main main.c sdl.c globals.c \
     -I/c/Users/*user*/Documents/GitHub/Micro-Game-Engine/ \
     -L/c/msys64/ucrt64/lib \
     -lmingw32 -lSDL2main -lSDL2 -lSDL2_image
+
+gcc -o main main.c Modules/*.c -I/c/msys64/ucrt64/include/SDL2 -I/c/Users/Tristan/Documents/GitHub/Micro-Game-Engine       -L/c/msys64/ucrt64/lib     -lmingw32 -lSDL2main -lSDL2 -lSDL2_image
+
+gcc -o main main.c Modules/*.c -I/c/msys64/ucrt64/include/SDL2 -I/c/Users/Tristan/Desktop/lvlEditor                         -L/c/msys64/ucrt64/lib      -lmingw32 -lSDL2main -lSDL2 -lSDL2_image

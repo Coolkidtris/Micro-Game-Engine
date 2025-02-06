@@ -24,8 +24,8 @@ enum Layer{                         // Holds all layers to display our sprites
 };
 
 typedef struct{                     // Struct for a Sprite - An image rendered to the screen.
-    SDL_Rect *spriteSourceRect;      // The Rect responsible for finding the sprite on the tilemap (x,y,w,h)
-    SDL_Rect *spriteDestRect;         // The Rect responsible for the location the sprite will be drawn to
+    SDL_Rect spriteSourceRect;      // The Rect responsible for finding the sprite on the tilemap (x,y,w,h)
+    SDL_Rect spriteDestRect;        // The Rect responsible for the location the sprite will be drawn to
 
     SDL_bool spriteVisible;         // Boolean to allow the sprite to be drawn/hidden
 

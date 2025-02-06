@@ -1,4 +1,5 @@
-#include "sdl.h"
+#include "Header/engine.h"
+#include "Header/sdl.h"
 
 /* RECT Functions */
 SDL_Rect setUpRect(int x, int y, int w, int h){

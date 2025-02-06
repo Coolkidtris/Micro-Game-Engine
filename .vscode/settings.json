@@ -59,6 +59,7 @@
   "files.associations": {
     ".fantomasignore": "ignore",
     "sdl.h": "c",
-    "sdl_image.h": "c"
+    "sdl_image.h": "c",
+    "engine.h": "c"
   }
 }
