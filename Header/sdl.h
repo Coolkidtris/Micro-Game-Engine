@@ -1,7 +1,11 @@
 #include <SDL2/SDL.h>
 #include <SDL2/SDL_image.h>
+
 #include <stdio.h>
 #include <stdlib.h>
+
+#include "Header/engine.h"
+#include "Header/sprite.h"
 
 /* Macro Definitions */
 #define SCREEN_WIDTH 800
