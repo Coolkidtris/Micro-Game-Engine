@@ -1,3 +1,4 @@
+#include "Header/sdl.h"
 
 /* RECT Functions */
 SDL_Rect setUpRect(int x, int y, int w, int h){
@@ -10,7 +11,6 @@ void setupSDL(){
     running = SDL_TRUE;
     window = SDL_CreateWindow("Tiles", WINDOW_POSX, WINDOWS_POSY, SCREEN_WIDTH, SCREEN_HEIGHT, 0);
     renderer  = SDL_CreateRenderer(window, -1, SDL_RENDERER_ACCELERATED );
-    tileSet = 
     printf("SDL setup\n");
 }
 

@@ -1,11 +1,11 @@
+#ifndef SDL_H
+#define SDL_H
+
 #include <SDL2/SDL.h>
 #include <SDL2/SDL_image.h>
 
 #include <stdio.h>
 #include <stdlib.h>
-
-#include "Header/engine.h"
-#include "Header/sprite.h"
 
 /* Macro Definitions */
 #define SCREEN_WIDTH 800
@@ -29,3 +29,5 @@ void evaluateEvent(SDL_Event event);
 void pollSDL();
 void cleanupSDL();
 void mainLoop();
+
+#endif

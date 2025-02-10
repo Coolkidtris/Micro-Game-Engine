@@ -60,6 +60,7 @@
     ".fantomasignore": "ignore",
     "sdl.h": "c",
     "sdl_image.h": "c",
-    "engine.h": "c"
+    "engine.h": "c",
+    "sprite.h": "c"
   }
 }

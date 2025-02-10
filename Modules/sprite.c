@@ -1,4 +1,6 @@
 
+#include "Header/sprite.h"
+#include "Header/engine.h"
 
 Sprite NewSprite(Vector2D spritePosition, Vector2D spriteSize, Vector2D spriteSheetPosition){
     SDL_Rect sourceRect = NewRect(spritePosition, spriteSize);
@@ -6,6 +8,10 @@ Sprite NewSprite(Vector2D spritePosition, Vector2D spriteSize, Vector2D spriteSh
 
     Sprite newSprite = {sourceRect, destRect, SDL_TRUE, 1};
     return newSprite;
+}
+
+Map NewMap(){
+    
 }
 
 void Copy_Sprite_To_Buffer(Sprite spriteToCopy, SDL_Renderer *renderer, SDL_Texture *srcTexture){
@@ -16,6 +22,6 @@ void Copy_Sprite_To_Buffer(Sprite spriteToCopy, SDL_Renderer *renderer, SDL_Text
     printf("Copying to buffer\n"); 
 }
 
-Map NewMap(){
+void Copy_Map_To_Buffer(){
     
 }
