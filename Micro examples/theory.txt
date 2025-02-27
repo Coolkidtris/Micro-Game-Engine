@@ -1,0 +1,26 @@
+.macros
+
+
+.initialised                                # Initialised Data - Data known before run time
+map     floorTileMap   "path/to/tilemap"    # Initialise a tilemap called 'floorTileMap'
+map     bgTileMap      "path/to/tilemap"    # Initialise a tilemap called 'bgTileMap'
+
+.uninitialised                              # Uninitialised Data - Data to be set at run time
+sprite  array floorTiles        ?             # Initialise an array of Sprites, size unknown
+sprite  array bgTiles           ?
+
+.code                                       # Code starts here
+
+# Tilemap Splitting #
+
+SPLIT floorTileMap INTO floorTiles          # Split the tilemaps into an array
+    HEIGHT  32                              # Where each tile is 32 high
+    WIDTH   32                              # And 32 Wide
+end
+
+SPLIT bgTileMap INTO bgTiles                # Split the tilemaps into an array
+    HEIGHT  32                              # Where each tile is 32 high
+    WIDTH   32                              # And 32 Wide
+end
+
+

@@ -19,7 +19,7 @@
 
 /*TESTING!!! REMOVE LATER*/
 #define xSize 25
-#defome ySize 25
+#define ySize 25
 
 /* Tile coordinates*/
 #define xNewRectPosition (150 + x * 10 - y * 10)
@@ -57,7 +57,12 @@ typedef struct{                     // Struct for a Map - The first layer which 
 } Map;
 
 /* Sprite functions */
-Sprite NewSprite(Vector2D spritePosition, Vector2D spriteSize, Vector2D spriteSheetPosition);
+Sprite NewSprite(Vector2D spriteSheetPosition);
+
+SDL_Rect SetSpriteSource(Sprite *spriteToSet, Vector2D size);
+SDL_Rect SetSpriteDestination(Sprite *spriteToSet, Vector2D size);
+Vector2D SetSpriteSize(Sprite *spriteToSize, int x, int y);
+
 void Copy_Sprite_To_Buffer(Sprite spriteToCopy, SDL_Renderer *renderer, SDL_Texture *srcTexture);
 
 #endif

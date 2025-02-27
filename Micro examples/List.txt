@@ -1,0 +1,67 @@
+# All Micro Examples#
+
+1. Segments
+    Micro operates on the idea of 'segments' to keep code clean. This also ensures easy compilation.
+    Segments are denoted by a dot (.) prefix followed by the segment type.
+    The segments are as follows:
+        .macros         - Where any C macro definitions would be defined.
+        .initialised    - Where data that is known before run time is put and defined.
+        .uninitialised  - Where data that is not known before run time is put.
+        .main           - The main entry point, where code is written.
+
+    Segments must be written in the above order to keep code clean, concise and readable.
+    Segments act as a way for the compiler to know what to include into .h files. 
+
+2. Variable:
+    Variables are used to store data.
+    They can be of any valid type. The main types are:
+
+        integer         - Any whole decimal number.
+        float           - Any floating point decimal number.
+        string          - Any collection of Ascii characters.
+        array           - A continuous collection of same-type variables held in memory.
+        map             - A tilemap containing Sprites.
+        sprite          - A texture containing image data.
+        vector2         - A 2D Vector, representing (X,Y) coordinates.
+        vector3         - A 3D Vector, representing (X,Y,Z) coordinates.
+        layer           - A render target which holds sprites. Controls the order in which items are drawn.
+    
+    Variables are defined either in the .initialised or .uninitialised segments.
+    They are defined as follows:
+        (Type) (Name) (Value)
+    Or, if uninitialised, as:
+        (Type) (Name) ?
+
+    A practical example of both would be:
+        .initialised
+        integer Number1 10
+
+        .uninitialised
+        integer Number2 ?
+
+3. Arrays
+    It may be useful to keep a collection of same-type variables together in memory.
+    This is done via the use of an array. 
+
+    An array needs a fixed size if defined in .initialised.
+    This is done using the 'array' keyword. 
+
+    The process is similar to defining a variable, as it goes:
+        (Type) array (Name)
+    
+    This is followed by its contents, written underneath, using the 'CONTENTS' keyword
+
+    A practicale example would be:
+        INTEGER ARRAY NumberArray
+            CONTENTS 1,2,3,5,6
+
+    
+    If the size of the array is unknown, then it is defined like an uninitialised variable:
+        integer array NumberArray2 ?
+    
+    Accessing an array's contents is easy. It can either be done using index, or the variable assigned to it.
+    When an array is created, variables are assigned to it in the following method:
+    
+        INTEGER ARRAY NumberArray 
+            CONTENTS 1,2,3,4,5
+    
